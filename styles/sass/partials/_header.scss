@@ -1,0 +1,15 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.headshot-and-navbar {
+    background-color: $secondary-background-color;
+    // height: 100px;
+}
+
+// .header-parent {
+//     @include font()
+// }
+
+.headshot img {
+    width: 50px;
+}
