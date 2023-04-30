@@ -1,0 +1,42 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.skills {
+    background-color: $secondary-background-color;
+    padding: 50px 0;
+}
+
+.skills-parent {
+    @include flexbox(column);
+
+    .skills-child {
+        padding: 25px 0;
+        
+        h3 {
+            @include font(1.25rem, 1rem, $primary-font-color, uppercase, 700);
+            letter-spacing: 0.2rem;
+        }
+        
+        li {
+            @include font(1rem, 1rem, $primary-font-color, none, 400);
+        }
+    }
+}
+
+.skills-icon-parent {
+    @include flexbox(row, center, center);
+    flex-wrap: wrap;
+
+    li {
+            @include flexbox(column);
+            width: 120px;
+            height: 120px;
+            margin: 0 15px;
+    
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+}
+
