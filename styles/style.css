@@ -492,7 +492,7 @@ a {
 }
 .about-parent .about-me-content .about-bio p {
   margin: 0 25px;
-  padding: 25px 0;
+  padding: 20px 0;
 }
 
 .about-me-goals {
@@ -820,6 +820,7 @@ a {
 }
 .contact-title p {
   padding: 25px 0;
+  text-align: center;
 }
 
 form {
