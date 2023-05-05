@@ -1,11 +1,12 @@
 @use './variables' as *;
 
-@mixin font($font-size: 1rem, $line-height: 1.25rem, $color: $primary-font-color, $text-transform: none, $font-weight: 400) {
+@mixin font($font-size: 1rem, $line-height: 1.25rem, $color: $primary-font-color, $text-transform: none, $font-weight: 400, $letter-spacing: 0rem) {
     font-size: $font-size;
     line-height: $line-height;
     color: $color;
     text-transform: $text-transform;
     font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
 }
 
 @mixin flexbox($flex-direction: row, $justify-content: space-between, $align-items: center) {

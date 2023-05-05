@@ -1,0 +1,15 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.footer-end {
+    background: $secondary-background-color;
+    padding: 5px 0;
+}
+
+.copyright {
+    @include flexbox(column);
+
+    p {
+        @include font(0.5rem, 1rem, $primary-font-color, uppercase, 700);
+    }
+}

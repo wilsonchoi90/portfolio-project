@@ -13,8 +13,8 @@
         padding: 25px 0;
         
         h3 {
-            @include font(1.25rem, 1rem, $primary-font-color, uppercase, 700);
-            letter-spacing: 0.2rem;
+            @include font(1.25rem, 1rem, $primary-font-color, uppercase, 700, 0.3rem);
+
         }
         
         li {

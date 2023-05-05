@@ -13,8 +13,7 @@
         padding: 25px 0;
 
         h3 {
-            @include font(1.25rem, 1rem, $secondary-font-color, uppercase, 700);
-            letter-spacing: 0.2rem;
+            @include font(1.25rem, 1rem, $secondary-font-color, uppercase, 700, 0.3rem);
         }
 
         p {
@@ -23,14 +22,21 @@
     }
 
     .about-me-content {
-        @include flexbox();
+        @include flexbox(row);
 
         img {
-            padding: 0 50px 0 0;
+            width: 250px;
+            border: 2px solid $secondary-font-color;
+            margin: 0 25px;
         }
 
-        p {
-            padding: 0 0 0 50px;
+        .about-bio {
+            @include flexbox(column);
+
+            p {
+                margin: 0 25px;
+                padding: 25px 0;
+            }
         }
     }
 }
@@ -42,11 +48,43 @@
     .goals-child {
         @include flexbox(column, space-between, center);
         align-content: center;
+        padding: 0 25px;
     }
 
     img {
         width: 50px;
         height: 50px;
+        margin: 10px 0;
     }
 
+    h4 {
+        margin: 10px 0;
+    }
+    
+    p {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-parent {
+        
+        .about-child {
+            @include flexbox(column);
+
+            img {
+                margin: 25px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 692px) {
+    .about-parent {
+
+        .about-me-goals {
+            @include flexbox(column);
+        }
+    }
 }

@@ -1,0 +1,31 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.get-in-touch {
+    background: $secondary-background-color;
+    padding: 50px 0;
+}
+
+.additional-parent {
+    @include flexbox(column);
+    padding: 50px 0;
+
+    .additional-title {
+        padding: 25px 0;
+
+        h3 {
+            @include font(1.25rem, 1rem, $primary-font-color, uppercase, 700, 0.3rem);
+        }
+    }
+}
+
+.contact-icons-parent {
+    @include flexbox();
+}
+.contact-icon-child {
+    padding: 25px;
+
+    a img {
+        width: 50px;
+    }
+}

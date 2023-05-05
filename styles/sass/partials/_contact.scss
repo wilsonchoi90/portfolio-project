@@ -1,0 +1,33 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.contact-me {
+    background: $primary-background-color;
+    padding: 50px 0;
+}
+
+.contact-title {
+    @include flexbox(column);
+    
+    h3 {
+        @include font(1.25rem, 1rem, $secondary-font-color, uppercase, 700, 0.3rem);
+        padding: 25px 0;
+    }
+    
+    p {
+        padding: 25px 0;
+    }
+}
+
+form {
+    flex-basis: auto;
+}
+
+fieldset {
+    @include flexbox();
+}
+
+
+.contact-form {
+    border: 2px solid $secondary-font-color;
+}

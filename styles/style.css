@@ -311,6 +311,7 @@ a {
   color: #fff;
   text-transform: none;
   font-weight: 600;
+  letter-spacing: 0rem;
   word-spacing: 30px;
 }
 
@@ -367,6 +368,7 @@ a {
   color: #fff;
   text-transform: none;
   font-weight: 400;
+  letter-spacing: 0rem;
 }
 .hero-text h1 {
   font-size: 4rem;
@@ -374,6 +376,7 @@ a {
   color: #fff;
   text-transform: none;
   font-weight: 300;
+  letter-spacing: 0rem;
 }
 .hero-text h1 span {
   font-size: 6rem;
@@ -381,6 +384,7 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0rem;
 }
 .hero-text h2 {
   font-size: 2rem 1.5rem;
@@ -388,8 +392,30 @@ a {
   color: none;
   text-transform: 300;
   font-weight: 400;
+  letter-spacing: 0rem;
 }
 
+@media (max-width: 714px) {
+  .hero-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-parent img {
+    width: 200px;
+    margin: 25px;
+  }
+}
 .about {
   background: #fff;
   padding: 50px 0;
@@ -419,7 +445,7 @@ a {
   color: #000;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 .about-parent .about-child p {
   font-size: 1rem;
@@ -427,6 +453,7 @@ a {
   color: #000;
   text-transform: none;
   font-weight: 400;
+  letter-spacing: 0rem;
 }
 .about-parent .about-me-content {
   display: -webkit-box;
@@ -444,10 +471,28 @@ a {
           align-items: center;
 }
 .about-parent .about-me-content img {
-  padding: 0 50px 0 0;
+  width: 250px;
+  border: 2px solid #000;
+  margin: 0 25px;
 }
-.about-parent .about-me-content p {
-  padding: 0 0 0 50px;
+.about-parent .about-me-content .about-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-parent .about-me-content .about-bio p {
+  margin: 0 25px;
+  padding: 25px 0;
 }
 
 .about-me-goals {
@@ -482,12 +527,58 @@ a {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 0 25px;
 }
 .about-me-goals img {
   width: 50px;
   height: 50px;
+  margin: 10px 0;
+}
+.about-me-goals h4 {
+  margin: 10px 0;
+}
+.about-me-goals p {
+  margin: 10px 0;
+  text-align: center;
 }
 
+@media (max-width: 700px) {
+  .about-parent .about-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-parent .about-child img {
+    margin: 25px 0;
+  }
+}
+@media (max-width: 692px) {
+  .about-parent .about-me-goals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .skills {
   background-color: #000;
   padding: 50px 0;
@@ -517,7 +608,7 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 .skills-parent .skills-child li {
   font-size: 1rem;
@@ -525,6 +616,7 @@ a {
   color: #fff;
   text-transform: none;
   font-weight: 400;
+  letter-spacing: 0rem;
 }
 
 .skills-icon-parent {
@@ -565,4 +657,221 @@ a {
 .skills-icon-parent li img {
   width: 100px;
   height: 100px;
+}
+
+.portfolio {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.portfolio-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio-parent .portfolio-title {
+  padding: 25px 0;
+}
+.portfolio-parent .portfolio-title h3 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+.portfolio-parent .portfolio-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+.portfolio-parent .portfolio-child .portfolio-project {
+  padding: 0 10px;
+}
+.portfolio-parent .portfolio-child .portfolio-project img {
+  width: 400px;
+}
+
+@media (max-width: 714px) {
+  .portfolio-parent .portfolio-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-parent .portfolio-child .portfolio-project {
+    padding: 25px;
+  }
+}
+.get-in-touch {
+  background: #000;
+  padding: 50px 0;
+}
+
+.additional-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+.additional-parent .additional-title {
+  padding: 25px 0;
+}
+.additional-parent .additional-title h3 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.contact-icons-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-icon-child {
+  padding: 25px;
+}
+.contact-icon-child a img {
+  width: 50px;
+}
+
+.contact-me {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.contact-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-title h3 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  padding: 25px 0;
+}
+.contact-title p {
+  padding: 25px 0;
+}
+
+form {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form {
+  border: 2px solid #000;
+}
+
+.footer-end {
+  background: #000;
+  padding: 5px 0;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.copyright p {
+  font-size: 0.5rem;
+  line-height: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0rem;
 }

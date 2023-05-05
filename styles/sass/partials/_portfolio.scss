@@ -1,0 +1,47 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.portfolio {
+    background: $primary-background-color;
+    padding: 50px 0;
+}
+
+.portfolio-parent {
+    @include flexbox(column);
+
+    .portfolio-title {
+        padding: 25px 0;
+
+        h3 {
+            @include font(1.25rem, 1rem, $secondary-font-color, uppercase, 700, 0.3rem);
+
+        }
+    }
+
+    .portfolio-child {
+        @include flexbox(row);
+        padding: 25px 0;
+
+        .portfolio-project {
+            padding: 0 10px;
+
+            img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 714px) {
+    
+    .portfolio-parent {
+
+        .portfolio-child {
+            @include flexbox(column);
+
+            .portfolio-project {
+                padding: 25px;
+            }
+        }
+    }
+}

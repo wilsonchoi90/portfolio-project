@@ -44,7 +44,7 @@
 
     img {
         width: 250px;
-        border: 2px solid #fff;
+        border: 2px solid $primary-font-color;
         border-radius: 50%
     }
 }
@@ -66,4 +66,16 @@
         @include font(2rem 1.5rem, $primary-font-color, none, 300);
     }
 
+}
+
+
+@media (max-width: 714px) {
+    .hero-parent {
+        @include flexbox(column);
+
+        img {
+            width: 200px;
+            margin: 25px;
+        }
+    }
 }
