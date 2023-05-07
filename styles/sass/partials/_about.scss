@@ -23,6 +23,8 @@
 
     .about-me-content {
         @include flexbox(row);
+        width: 80%;
+        align-content: center;
 
         img {
             width: 300px;
@@ -34,7 +36,6 @@
             @include flexbox(column);
 
             p {
-                margin: 0 25px;
                 padding: 20px 0;
             }
         }

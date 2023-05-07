@@ -23,10 +23,13 @@
         padding: 25px 0;
 
         .portfolio-project {
-            padding: 0 10px;
+            margin: 0 10px;
+            width: 400px;
 
-            img {
-                width: 400px;
+            &:hover,
+            &:focus,
+            &:focus-within {
+                box-shadow: 0 0 9px $secondary-font-color;
             }
         }
     }
