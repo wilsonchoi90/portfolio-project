@@ -899,8 +899,8 @@ a {
   text-transform: uppercase;
 }
 .contact-form form button:hover, .contact-form form button:focus, .contact-form form button:focus-within {
-  -webkit-box-shadow: 0 0 2px #000;
-          box-shadow: 0 0 2px #000;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
 }
 
 .footer-end {
