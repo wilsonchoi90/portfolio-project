@@ -155,10 +155,6 @@
                             <a href="https://www.linkedin.com/in/wilsonchoi90/"><img src="./assets/icons/logo-linkedin-white.png"
                                     alt="LinkedIn icon"></a>
                         </div>
-        
-                        <div class="contact-icon-child">
-                            <a href=""><img src="./assets/icons/mail-white.png" alt="Email logo"></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -174,22 +170,31 @@
                     </div>
                     
                     <div class="contact-form">
-                        <form action="">
+                        <form action="https://formspree.io/f/mayzvvbk" method="POST">
                             <fieldset>
                                 <label for="full-name">Your name:</label>
-                                <input type="text" id="full-name" required>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" required>
-                                <label for="phone-number">Phone number:</label>
-                                <input type="tel" id="phone-number"required>
-                            </fieldset>
-                    
+                                <input type="text" id="full-name input-field" required>
+                            <fieldset>                            
+                            
                             <fieldset>
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" required></textarea>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email input-field" required>
+                            </fieldset>    
+
+                            <fieldset>
+                                <label for="phone-number">Phone number:</label>
+                                <input type="tel" id="phone-number input-field"required>
                             </fieldset>
 
-                            <button>SEND</button>
+                            <fieldset>
+                                <label for="message">Message:</label>
+                                <textarea name="message" id="message input-field" required></textarea>
+                            </fieldset>
+
+                            <fieldset>
+                                <button id="submit">Send</button>
+                            </fieldset>
+
                         </form>
                     </div>
                 </div>
@@ -209,5 +214,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

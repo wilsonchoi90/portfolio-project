@@ -317,7 +317,7 @@ a {
 
 .hero {
   background-image: url(../../../assets/images/toronto-skyline.jpg);
-  height: 60vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -635,6 +635,7 @@ a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 60%;
 }
 .skills-icon-parent li {
   display: -webkit-box;
@@ -659,6 +660,16 @@ a {
   height: 100px;
 }
 
+@media (max-width: 572px) {
+  .skills-icon-parent {
+    width: 80%;
+  }
+}
+@media (max-width: 432px) {
+  .skills-icon-parent {
+    width: 100%;
+  }
+}
 .portfolio {
   background: #fff;
   padding: 50px 0;
@@ -789,7 +800,10 @@ a {
   width: 50px;
 }
 
-.contact-me {
+.contact {
+  padding: 50px 0;
+}
+.contact .contact-me {
   background: #fff;
   padding: 50px 0;
 }
@@ -823,19 +837,14 @@ a {
   text-align: center;
 }
 
-form {
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-}
-
-fieldset {
+.contact-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -843,9 +852,41 @@ fieldset {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.contact-form {
+.contact-form form button {
+  background-color: #fff;
   border: 2px solid #000;
+  width: 200px;
+  height: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.contact-form form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+.contact-form form fieldset input,
+.contact-form form fieldset textarea {
+  border-bottom: 2px solid #D3D3D3;
+  width: 250px;
+}
+.contact-form form fieldset textarea {
+  height: 250px;
+  border: 2px solid #D3D3D3;
+}
+.contact-form form fieldset button {
+  text-transform: uppercase;
 }
 
 .footer-end {

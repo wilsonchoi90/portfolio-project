@@ -26,17 +26,35 @@
 .skills-icon-parent {
     @include flexbox(row, center, center);
     flex-wrap: wrap;
+    width: 60%;
 
     li {
-            @include flexbox(column);
-            width: 120px;
-            height: 120px;
-            margin: 0 15px;
+        @include flexbox(column);
+        width: 120px;
+        height: 120px;
+        margin: 0 15px;
     
-            img {
-                width: 100px;
-                height: 100px;
-            }
+        img {
+            width: 100px;
+            height: 100px;
         }
+    }
 }
 
+// @media (max-width: 1114px) {
+//     .skills-icon-parent {
+//         width: 65%;
+//     }
+// }
+
+@media (max-width: 572px) {
+    .skills-icon-parent {
+        width: 80%;
+    }
+}
+
+@media (max-width: 432px) {
+    .skills-icon-parent {
+        width: 100%;
+    }
+}
