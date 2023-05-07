@@ -19,6 +19,8 @@
     }
     
     p {
+        @include font(1rem,
+            1.25rem, $secondary-font-color, none, 400);
         padding: 25px 0;
         text-align: center;
     }

@@ -449,7 +449,7 @@ a {
 }
 .about-parent .about-child p {
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.25rem;
   color: #000;
   text-transform: none;
   font-weight: 400;
@@ -471,8 +471,7 @@ a {
           align-items: center;
 }
 .about-parent .about-me-content img {
-  width: 250px;
-  border: 2px solid #000;
+  width: 300px;
   margin: 0 25px;
 }
 .about-parent .about-me-content .about-bio {
@@ -542,7 +541,7 @@ a {
   text-align: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .about-parent .about-child {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -833,6 +832,12 @@ a {
   padding: 25px 0;
 }
 .contact-title p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #000;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0rem;
   padding: 25px 0;
   text-align: center;
 }

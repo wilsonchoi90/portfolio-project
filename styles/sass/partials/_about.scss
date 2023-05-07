@@ -17,7 +17,7 @@
         }
 
         p {
-            @include font(1rem, 1rem, $secondary-font-color, none, 400);
+            @include font(1rem, 1.25rem, $secondary-font-color, none, 400);
         }
     }
 
@@ -25,8 +25,8 @@
         @include flexbox(row);
 
         img {
-            width: 250px;
-            border: 2px solid $secondary-font-color;
+            width: 300px;
+            // border: 2px solid $secondary-font-color;
             margin: 0 25px;
         }
 
@@ -67,7 +67,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .about-parent {
         
         .about-child {
