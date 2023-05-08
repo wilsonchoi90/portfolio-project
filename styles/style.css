@@ -229,6 +229,7 @@ html {
 html {
   font-size: 20px;
   font-family: "Raleway", "Roboto", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -261,6 +262,35 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .header-and-navbar {
@@ -354,17 +384,15 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.hero-photo {
+.hero-parent .hero-photo {
   padding: 0 20px;
 }
-.hero-photo img {
+.hero-parent .hero-photo img {
   width: 250px;
   border: 2px solid #fff;
   border-radius: 50%;
 }
-
-.hero-text {
+.hero-parent .hero-text {
   padding: 0 20px;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -373,32 +401,34 @@ a {
   font-weight: 400;
   letter-spacing: 0rem;
 }
-.hero-text h1 {
+.hero-parent .hero-text h1 {
   font-size: 4rem;
   line-height: 3rem;
   color: #fff;
   text-transform: none;
   font-weight: 300;
   letter-spacing: 0rem;
+  text-shadow: 0 0 px #000;
 }
-.hero-text h1 span {
-  font-size: 6rem;
-  line-height: 5rem;
+.hero-parent .hero-text h1 span {
+  font-size: 5rem;
+  line-height: 4rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0rem;
 }
-.hero-text h2 {
+.hero-parent .hero-text h2 {
   font-size: 2rem 1.5rem;
   line-height: #fff;
   color: none;
   text-transform: 300;
   font-weight: 400;
   letter-spacing: 0rem;
+  text-shadow: 0 0 10px #000;
 }
 
-@media (max-width: 714px) {
+@media (max-width: 830px) {
   .hero-parent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -810,10 +840,7 @@ a {
 
 .contact {
   padding: 50px 0;
-}
-.contact .contact-me {
-  background: #fff;
-  padding: 50px 0;
+  background-color: #fff;
 }
 
 .contact-title {
