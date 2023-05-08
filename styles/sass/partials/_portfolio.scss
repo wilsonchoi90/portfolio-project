@@ -9,7 +9,7 @@
 
 .portfolio-parent {
     @include flexbox(column);
-    
+
     .portfolio-title {
         padding: 25px 0;
 
@@ -25,7 +25,7 @@
 
         .portfolio-project {
             margin: 0 10px;
-            width: 400px;
+            width: calc(100% / 3);
 
             &:hover,
             &:focus,
@@ -36,17 +36,24 @@
     }
 }
 
-@media (max-width: 714px) {
-    
+@media (max-width: 849px) {
+
     .portfolio-parent {
 
         .portfolio-child {
             @include flexbox(column);
 
             .portfolio-project {
-                display: flex;
+                width: 70%;
                 margin: 10px;
             }
         }
+    }
+}
+
+@media (max-width: 574px) {
+
+    .portfolio-project {
+        width: 100%;
     }
 }

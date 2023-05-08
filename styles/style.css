@@ -448,6 +448,10 @@ a {
     width: 200px;
     margin: 25px;
   }
+  .hero-parent h1,
+  .hero-parent h2 {
+    text-align: center;
+  }
 }
 .about {
   background: #fff;
@@ -753,14 +757,14 @@ a {
 }
 .portfolio-parent .portfolio-child .portfolio-project {
   margin: 0 10px;
-  width: 400px;
+  width: 33.3333333333%;
 }
 .portfolio-parent .portfolio-child .portfolio-project:hover, .portfolio-parent .portfolio-child .portfolio-project:focus, .portfolio-parent .portfolio-child .portfolio-project:focus-within {
   -webkit-box-shadow: 0 0 9px #000;
           box-shadow: 0 0 9px #000;
 }
 
-@media (max-width: 714px) {
+@media (max-width: 849px) {
   .portfolio-parent .portfolio-child {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -777,10 +781,13 @@ a {
             align-items: center;
   }
   .portfolio-parent .portfolio-child .portfolio-project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: 70%;
     margin: 10px;
+  }
+}
+@media (max-width: 574px) {
+  .portfolio-project {
+    width: 100%;
   }
 }
 .get-in-touch {
