@@ -448,6 +448,10 @@ a {
     width: 200px;
     margin: 25px;
   }
+  .hero-parent h1,
+  .hero-parent h2 {
+    text-align: center;
+  }
 }
 .about {
   background: #fff;
