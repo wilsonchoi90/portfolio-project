@@ -43,7 +43,8 @@
             @include flexbox(column);
 
             .portfolio-project {
-                padding: 25px;
+                display: flex;
+                margin: 10px;
             }
         }
     }

@@ -747,7 +747,10 @@ a {
             align-items: center;
   }
   .portfolio-parent .portfolio-child .portfolio-project {
-    padding: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
   }
 }
 .get-in-touch {
