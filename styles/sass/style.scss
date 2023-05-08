@@ -1,1 +1,9 @@
-@use '../sass/partials/setup';
+@use './partials/setup';
+@use './partials/global';
+@use './partials/header';
+@use './partials/about';
+@use './partials/skills';
+@use './partials/portfolio';
+@use './partials/additional';
+@use './partials/contact';
+@use './partials/footer';

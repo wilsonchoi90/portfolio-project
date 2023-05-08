@@ -225,3 +225,712 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 20px;
+  font-family: "Raleway", "Roboto", Arial, sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, fieldset, input {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset, input, textarea, button {
+  border: 0;
+}
+
+span, img, a {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-and-navbar {
+  background-color: #000;
+}
+
+.header-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head-icon img {
+  width: 50px;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar ul li {
+  padding: 10px;
+}
+.navbar ul li a {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #fff;
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0rem;
+  word-spacing: 30px;
+}
+.navbar ul li:hover, .navbar ul li:focus {
+  border-bottom: 2px solid #fff;
+}
+
+.hero {
+  background-image: url(../../../assets/images/toronto-skyline.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-photo {
+  padding: 0 20px;
+}
+.hero-photo img {
+  width: 250px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.hero-text {
+  padding: 0 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #fff;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+.hero-text h1 {
+  font-size: 4rem;
+  line-height: 3rem;
+  color: #fff;
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: 0rem;
+}
+.hero-text h1 span {
+  font-size: 6rem;
+  line-height: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0rem;
+}
+.hero-text h2 {
+  font-size: 2rem 1.5rem;
+  line-height: #fff;
+  color: none;
+  text-transform: 300;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+
+@media (max-width: 714px) {
+  .hero-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-parent img {
+    width: 200px;
+    margin: 25px;
+  }
+}
+.about {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.about-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-parent .about-child {
+  padding: 25px 0;
+}
+.about-parent .about-child h3 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+.about-parent .about-child p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #000;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+.about-parent .about-me-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.about-parent .about-me-content img {
+  width: 300px;
+  margin: 0 25px;
+}
+.about-parent .about-me-content .about-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-parent .about-me-content .about-bio p {
+  padding: 20px 0;
+}
+
+.about-me-goals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+.about-me-goals .goals-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 25px;
+}
+.about-me-goals img {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+}
+.about-me-goals h4 {
+  margin: 10px 0;
+}
+.about-me-goals p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .about-parent .about-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-parent .about-child img {
+    margin: 25px 0;
+  }
+}
+@media (max-width: 692px) {
+  .about-parent .about-me-goals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.skills {
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.skills-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills-parent .skills-child {
+  padding: 25px 0;
+}
+.skills-parent .skills-child h3 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+.skills-parent .skills-child li {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #fff;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+
+.skills-icon-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+}
+.skills-icon-parent li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+}
+.skills-icon-parent li img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 572px) {
+  .skills-icon-parent {
+    width: 80%;
+  }
+}
+@media (max-width: 432px) {
+  .skills-icon-parent {
+    width: 100%;
+  }
+}
+.portfolio {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.portfolio-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio-parent .portfolio-title {
+  padding: 25px 0;
+}
+.portfolio-parent .portfolio-title h3 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+.portfolio-parent .portfolio-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+.portfolio-parent .portfolio-child .portfolio-project {
+  margin: 0 10px;
+  width: 400px;
+}
+.portfolio-parent .portfolio-child .portfolio-project:hover, .portfolio-parent .portfolio-child .portfolio-project:focus, .portfolio-parent .portfolio-child .portfolio-project:focus-within {
+  -webkit-box-shadow: 0 0 9px #000;
+          box-shadow: 0 0 9px #000;
+}
+
+@media (max-width: 714px) {
+  .portfolio-parent .portfolio-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-parent .portfolio-child .portfolio-project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+  }
+}
+.get-in-touch {
+  background: #000;
+  padding: 50px 0;
+}
+
+.additional-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.additional-parent .additional-title {
+  padding: 25px 0;
+}
+.additional-parent .additional-title h3 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.contact-icons-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-icon-child {
+  margin: 25px;
+}
+.contact-icon-child a img {
+  width: 50px;
+}
+
+.contact {
+  padding: 50px 0;
+}
+.contact .contact-me {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.contact-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-title h3 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  padding: 25px 0;
+}
+.contact-title p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #000;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0rem;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-form form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+.contact-form form fieldset input,
+.contact-form form fieldset textarea {
+  border-bottom: 2px solid #D3D3D3;
+  width: 250px;
+}
+.contact-form form fieldset textarea {
+  height: 250px;
+  border: 2px solid #D3D3D3;
+  margin: 25px 0;
+}
+.contact-form form button {
+  background-color: #fff;
+  border: 2px solid #000;
+  width: 200px;
+  height: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-transform: uppercase;
+}
+.contact-form form button:hover, .contact-form form button:focus, .contact-form form button:focus-within {
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.footer-end {
+  background: #000;
+  padding: 5px 0;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.copyright p {
+  font-size: 0.5rem;
+  line-height: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0rem;
+}
