@@ -15,7 +15,6 @@
 
         h3 {
             @include font(1.25rem, 1rem, $secondary-font-color, uppercase, 700, 0.3rem);
-
         }
     }
 
@@ -36,7 +35,11 @@
                     border: 2px solid $secondary-font-color;
                     // align-self: center;
                     text-transform: uppercase;
+                    width: 100px;
+                    height: 45px;
                     margin: 10px;
+
+
 
                     &:hover,
                     &:focus,

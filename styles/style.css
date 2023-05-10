@@ -817,6 +817,8 @@ a {
   background-color: #fff;
   border: 2px solid #000;
   text-transform: uppercase;
+  width: 100px;
+  height: 45px;
   margin: 10px;
 }
 .portfolio-parent .portfolio-child .portfolio-project .project-links button:hover, .portfolio-parent .portfolio-child .portfolio-project .project-links button:focus, .portfolio-parent .portfolio-child .portfolio-project .project-links button:focus-within {
