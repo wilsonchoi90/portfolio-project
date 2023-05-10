@@ -408,7 +408,7 @@ a {
   text-transform: none;
   font-weight: 300;
   letter-spacing: 0rem;
-  text-shadow: 0 0 px #000;
+  text-shadow: 0 0 10px #000;
 }
 .hero-parent .hero-text h1 span {
   font-size: 5rem;
@@ -419,11 +419,11 @@ a {
   letter-spacing: 0rem;
 }
 .hero-parent .hero-text h2 {
-  font-size: 2rem 1.5rem;
-  line-height: #fff;
-  color: none;
-  text-transform: 300;
-  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #fff;
+  text-transform: none;
+  font-weight: 300;
   letter-spacing: 0rem;
   text-shadow: 0 0 10px #000;
 }
@@ -444,13 +444,39 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .hero-parent img {
+  .hero-parent .hero-photo img {
     width: 200px;
     margin: 25px;
   }
-  .hero-parent h1,
-  .hero-parent h2 {
+  .hero-parent .hero-text h1,
+  .hero-parent .hero-text h2 {
     text-align: center;
+  }
+  .hero-parent .hero-text h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #fff;
+    text-transform: none;
+    font-weight: 300;
+    letter-spacing: 0rem;
+    text-shadow: 0 0 10px #000;
+  }
+  .hero-parent .hero-text h1 span {
+    font-size: 4.5rem;
+    line-height: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0rem;
+  }
+  .hero-parent .hero-text h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #fff;
+    text-transform: none;
+    font-weight: 300;
+    letter-spacing: 0rem;
+    text-shadow: 0 0 10px #000;
   }
 }
 .about {
@@ -756,12 +782,47 @@ a {
   padding: 25px 0;
 }
 .portfolio-parent .portfolio-child .portfolio-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 10px;
   width: 33.3333333333%;
 }
-.portfolio-parent .portfolio-child .portfolio-project:hover, .portfolio-parent .portfolio-child .portfolio-project:focus, .portfolio-parent .portfolio-child .portfolio-project:focus-within {
-  -webkit-box-shadow: 0 0 9px #000;
-          box-shadow: 0 0 9px #000;
+.portfolio-parent .portfolio-child .portfolio-project .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio-parent .portfolio-child .portfolio-project .project-links button {
+  background-color: #fff;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.portfolio-parent .portfolio-child .portfolio-project .project-links button:hover, .portfolio-parent .portfolio-child .portfolio-project .project-links button:focus, .portfolio-parent .portfolio-child .portfolio-project .project-links button:focus-within {
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+  cursor: pointer;
 }
 
 @media (max-width: 849px) {
@@ -938,6 +999,7 @@ a {
 .contact-form form button:hover, .contact-form form button:focus, .contact-form form button:focus-within {
   -webkit-box-shadow: 0 0 10px #000;
           box-shadow: 0 0 10px #000;
+  cursor: pointer;
 }
 
 .footer-end {

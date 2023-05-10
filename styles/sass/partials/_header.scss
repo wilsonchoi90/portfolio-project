@@ -60,16 +60,15 @@
 
         h1 {
             @include font(4rem, 3rem, $primary-font-color, none, 300);
-            text-shadow: 0 0 px $secondary-font-color;
+            text-shadow: 0 0 10px $secondary-font-color;
 
             span {
                 @include font(5rem, 4rem, $primary-font-color, uppercase, 700);
-
             }
         }
 
         h2 {
-            @include font(2rem 1.5rem, $primary-font-color, none, 300);
+            @include font(2rem, 1.5rem, $primary-font-color, none, 300);
             text-shadow: 0 0 10px $secondary-font-color;
         }
     }
@@ -79,14 +78,33 @@
     .hero-parent {
         @include flexbox(column);
 
-        img {
-            width: 200px;
-            margin: 25px;
+        .hero-photo {
+            img {
+                width: 200px;
+                margin: 25px;
+            }
         }
 
-        h1,
-        h2 {
-            text-align: center;
-        }
+
+        .hero-text {
+            h1,
+            h2 {
+                text-align: center;
+            }
+
+            h1 {
+                @include font(3rem, 3rem, $primary-font-color, none, 300);
+                text-shadow: 0 0 10px $secondary-font-color;
+
+                span {
+                    @include font(4.5rem, 4rem, $primary-font-color, uppercase, 700);
+                }
+            }
+
+            h2 {
+                @include font(1.5rem, 1.5rem, $primary-font-color, none, 300);
+                text-shadow: 0 0 10px $secondary-font-color;
+            }   
+        } 
     }
 }
