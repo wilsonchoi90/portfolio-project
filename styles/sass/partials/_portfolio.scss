@@ -25,7 +25,7 @@
         .portfolio-project {
             @include flexbox(column);
             margin: 0 10px;
-            width: calc(100% / 3);
+            width: calc(100% / 3 - 20px);
 
             .project-links {
                 @include flexbox(row);

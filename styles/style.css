@@ -796,7 +796,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 10px;
-  width: 33.3333333333%;
+  width: calc(33.3333333333% - 20px);
 }
 .portfolio-parent .portfolio-child .portfolio-project .project-links {
   display: -webkit-box;
